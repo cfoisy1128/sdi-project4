@@ -159,12 +159,12 @@ console.log (diffBetween(date1(20-06-2012) + (date2(25-06-2012);
 
 
 var string = “This is how we show a string as a number !”
-var n = string.toNum();
+var n = numToString();
 
 {
 var num = 42;
-var x = document.getElementById("test");
-x.innerHTML=num.toString();
+var n = numToString("test");
+x.innerHTML=numToString();
 }
 
 //CHECK 9
@@ -175,19 +175,78 @@ console.log(string.toNum);
 
 
 
-
-
 //ARRAY
 
 //PROBLEM 10
 //Find the smallest value in an array that is greater than a given number
 
+
+function findSmallestNum() {
+    function isBigEnough(element, index, array) {
+        return (element >= 25);
+    }
+    var filtered = [1, 5, 10, 15, 20, 25, 30, 35, 40].filter(isBigEnough);
+        
+    
+    isBigEnough();
+    filtered.sort(function (a, b) {
+        return a - b;
+    });
+
+
+    filtered.sort(function (a, b) {
+        return a - b;
+    });
+
+//CHECK 10
+  return console.log(filtered.sort());
+
+
+
+
+
+
+
 //PROBLEM 11
 //Find the total value of just the numbers in an array, even if some of the items are not numbers.]
+
+//I will use array= 2, 4, 6, a, 8, b
+
+var myNumbers=new Array();
+	myNum[0]= 2
+	myNum[1]= 4
+	myNum[2]= 6
+	myNum[3]= “a”
+	myNum[4]= 8
+	myNum[5]= “b”
+	
+var myNumbers=new Array [2, 4, 6, a, 8, b];
+funtion findTotalValueArray(0+1+2+3+4+5) {
+	
+};
+
+
+//END 11
+
+
+
+
 
 
 //PROBLEM 12
 //Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: “a” + [ {a:2}, {a:3}, {a:1}] -> {{a:1}, {a:2}, {a:3}].
+// key is a
+//sort array by the key a
+
+var myObjects=[{a:2}, {a:3}, {a:1}] -> {{a:1}, {a:2}, {a:3}];
+	myObjects.sort();
+myObjects.sort(function(a:2) {return 1-3});	
+	
+
+//END 12
+
+
+
 
 
 
