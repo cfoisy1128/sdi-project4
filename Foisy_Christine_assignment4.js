@@ -158,8 +158,18 @@ console.log (diffBetween(date1(20-06-2012) + (date2(25-06-2012);
 
 
 
+var string = “This is how we show a string as a number !”
+var n = string.toNum();
 
+{
+var num = 42;
+var x = document.getElementById("test");
+x.innerHTML=num.toString();
+}
 
+//CHECK 9
+console.log(string.toNum);
+//END 9
 
 
 
