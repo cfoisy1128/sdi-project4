@@ -62,19 +62,7 @@ var checkURL = function(val){
 
 //CHECK 3
 console.log(lib.checkURL(“http://www.thehouseofhopecdc.org”));
-
 //END PROBLEM 3
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -82,14 +70,56 @@ console.log(lib.checkURL(“http://www.thehouseofhopecdc.org”));
 //PROBLEM 4
 //Title-case a string (split into words, then uppercase the first letter of each word)
 
+    
+funtion fixCase(str){
+String.prototype.to
+{
+	return str.replace(/\w\s*/g, function(txt){
+		return txt.charAt(0).toProperCase() + txt.substring(1).toLowerCase();
+		};    
+    
+    fixThis.toProperCase();
+
+    
+//CHECK 4
+fixCase("christine foisy");
+   
+console.log(fixCase.toProperCase());
+//END PROBLEM 4
+
+
+
 
 //PROBLEM 5
 //Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
 
 
+
+
+
 //NUMBER
 //PROBLEM 6
 //Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+
+var num = 2.1;
+var result = num.toFixed(2.1); 
+var money = moneyToFix
+	function fixMoney(moneyToTest) {
+    	var money = moneyToTest
+    		money.toFixed(2.1)
+
+    return console.log(money.toFixed(2.1));
+	};
+
+
+//CHECK 5
+num = 2.10;
+result = num.toFixed(2); 
+//END PROBLEM 6
+
+
+
+
 
 //PROBLEM 7
 //Fuzzy-match a number: is the number above or below a number within a certain percent?
