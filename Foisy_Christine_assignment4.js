@@ -6,19 +6,23 @@
 //Does a string follow a 123-456-7890 pattern like a phone number?
 
 var checkNum = function (testNumber) {
-        var phoneNumber = testNumber;
-        var pattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
-	        if (pattern.test(phoneNumber)) { 
-            var validPhoneNumber = phoneNumber.replace(pattern, "($1) $2-$3");
+var phoneNumber = testNumber;
+var pattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+	    if (pattern.test(phoneNumber)) { 
+                return true;
+                    } else {                          
+                return false;
+           }
+};
             
-            console.log("It’s a good number!"); 
-        		} else {
-            return console.log("It’s not a good number."); 
-    }
    
-   
-   
-   
+//CHECK NUMBER FUNCTION
+// Problem 1
+console.log (checkNum("401-463-3324"));   
+
+//I was not familiar with the pattern for a phone number but was able to find it online which helped me test this.
+//END PROBLEM 1
+
 
 
 
@@ -74,9 +78,6 @@ var checkNum = function (testNumber) {
 
 
 
-//CHECK NUMBER FUNCTION
 
-// Problem 1
-checkNum("401-463-3324");
 
 
